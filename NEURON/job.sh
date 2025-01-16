@@ -38,5 +38,6 @@ cmake .. \
   -DMPI_C_COMPILER=mpifcc \
   -DMPI_CXX_COMPILER=mpiFCC
 
-cmake --build . --parallel 8
-cmake --build . --target install
+#cmake --build . --parallel 8
+#cmake --build . --target install
+make -j
