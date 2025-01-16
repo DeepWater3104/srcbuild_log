@@ -15,6 +15,7 @@
 spack load /nencizh # gcc@12.2.0
 spack load /fhakchp # python@3.8.12%fj@4.7.0
 spack load /kndrnlz # py-setuptools@68.0.0%fj4.10.0
+spack load /37xmpin #py-pip@23.0%fj@4.10.0
 #spack load /wb7zcjt # fujitsu-mpi@head%fj@4.11.1
 spack load /fl35w2u # py-jinja2
 spack load /esj6scy # py-pyyaml
