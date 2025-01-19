@@ -1,8 +1,16 @@
+[WARN] xos LPG 2002 - Failed to map HugeTLBfs for data/bss: /bin/bash
+The e_type of elf header must be ET_EXEC when using libmpg. You can check it on your load module by readelf -h command.
+[WARN] xos LPG 2002 - Failed to map HugeTLBfs for data/bss: /bin/bash
+The e_type of elf header must be ET_EXEC when using libmpg. You can check it on your load module by readelf -h command.
+[WARN] xos LPG 2002 - Failed to map HugeTLBfs for data/bss: /bin/bash
+The e_type of elf header must be ET_EXEC when using libmpg. You can check it on your load module by readelf -h command.
+[WARN] xos LPG 2002 - Failed to map HugeTLBfs for data/bss: /bin/bash
+The e_type of elf header must be ET_EXEC when using libmpg. You can check it on your load module by readelf -h command.
 -- linux-rhel8-a64fx / fj@4.10.0 --------------------------------
 py-jinja2@3.1.2
 py-pip@23.0
 py-pyyaml@6.0
-py-setuptools@68.0.0
+py-setuptools@59.4.0
 
 -- linux-rhel8-a64fx / fj@4.11.1 --------------------------------
 python@3.11.6
@@ -131,8 +139,8 @@ Extracting link flags from target 'nanobind', beware that this can be fragile. G
 Extracting link flags from target 'nrnpython', beware that this can be fragile. Got:  /vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/python-3.11.6-qbmpmn2uxu4oe3qoawxbizp7awqlgkcq/lib/libpython3.11.so;fmt::fmt;nanobind
 Extracting link flags from target 'Threads::Threads', beware that this can be fragile. Got:  /vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/python-3.11.6-qbmpmn2uxu4oe3qoawxbizp7awqlgkcq/lib/libpython3.11.so;fmt::fmt;nanobind -pthread
 Extracting link flags from path '/usr/lib64/libreadline.so', beware that this can be fragile. Got: -lreadline
-Extracting link flags from path '/usr/lib64/libcurses.so', beware that this can be fragile. Got: -lcurses
-Extracting link flags from path '/usr/lib64/libform.so', beware that this can be fragile. Got: -lform
+Generating link flags from path /vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so Got: /vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so -Wl,-rpath,/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib
+Generating link flags from path /vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libform.so Got: /vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libform.so -Wl,-rpath,/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib
 Generating link flags from path /vol0004/apps/oss/mpigcc/fjmpi-gcc12/lib64/libmpi.so Got: /vol0004/apps/oss/mpigcc/fjmpi-gcc12/lib64/libmpi.so -Wl,-rpath,/vol0004/apps/oss/mpigcc/fjmpi-gcc12/lib64
 Generating link flags from name 'dl', beware that this can be fragile. Got: -ldl
 -- 
@@ -170,7 +178,7 @@ Generating link flags from name 'dl', beware that this can be fragile. Got: -ldl
 --   INC         | /vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/python-3.11.6-qbmpmn2uxu4oe3qoawxbizp7awqlgkcq/include/python3.11
 --   LIB         | /vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/python-3.11.6-qbmpmn2uxu4oe3qoawxbizp7awqlgkcq/lib/libpython3.11.so
 -- Readline      | /usr/lib64/libreadline.so
--- Curses        | /usr/lib64/libcurses.so;/usr/lib64/libform.so
+-- Curses        | /vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so;/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libform.so
 -- RX3D          | OFF
 -- Interviews    | OFF
 -- CoreNEURON    | ON
@@ -182,131 +190,127 @@ Generating link flags from name 'dl', beware that this can be fragile. Got: -ldl
 --  See documentation : https://www.neuron.yale.edu/neuron/
 -- --------------+--------------------------------------------------------------
 -- 
--- Configuring done (134.3s)
--- Generating done (16.3s)
+-- Configuring done (143.3s)
+-- Generating done (17.2s)
 -- Build files have been written to: /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build
-/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/.d0036572986: line 40: -DCMAKE_C_COMPILER=gcc: command not found
+/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/.d0036573913: line 41: -DCMAKE_C_COMPILER=gcc: command not found
 [  0%] Building CXX object external/fmt/CMakeFiles/fmt.dir/src/format.cc.o
 [  0%] Building CXX object external/fmt/CMakeFiles/fmt.dir/src/os.cc.o
-[  0%] -- NMODL : GENERATING AST CLASSES WITH PYTHON GENERATOR! --
 [  0%] Built target CLI11
+[  0%] Built target nmodl_copy_solver_files
+[  0%] -- NMODL : GENERATING AST CLASSES WITH PYTHON GENERATOR! --
 [  0%] Generating ../../../../lib/nmodl/__init__.py
-[  0%] Generating ../../../../lib/nmodl/_binwrapper.py
-[  0%] Generating ../../../../lib/nmodl/ast.py
 [  0%] Generating ../../share/coreneuron/coreneuron.cpp
-[  0%] Generating ../../../../lib/nmodl/dsl.py
-[  1%] Generating ../../share/coreneuron/enginemech.cpp
+[  0%] Generating ../../../../lib/nmodl/_binwrapper.py
+[  0%] Generating ../../share/coreneuron/enginemech.cpp
 [  1%] Building CXX object src/coreneuron/CMakeFiles/corenrn_mpi.dir/mpi/lib/mpispike.cpp.o
-[  1%] Generating ../../../../lib/nmodl/ode.py
-[  1%] Building CXX object src/coreneuron/CMakeFiles/corenrn_mpi.dir/mpi/lib/nrnmpi.cpp.o
+[  1%] Generating ../../../../lib/nmodl/ast.py
 [  1%] Generating ../../share/coreneuron/mod_func.c.sh
+[  1%] Building CXX object src/coreneuron/CMakeFiles/corenrn_mpi.dir/mpi/lib/nrnmpi.cpp.o
 [  1%] Building CXX object src/sparse13/CMakeFiles/sparse13.dir/spalloc.cpp.o
-[  1%] Generating ../../../../lib/nmodl/symtab.py
+[  1%] Generating ../../../../lib/nmodl/dsl.py
 [  1%] Generating ../../share/modfile/exp2syn.mod
 [  1%] Building CXX object src/sparse13/CMakeFiles/sparse13.dir/spbuild.cpp.o
+[  1%] Generating ../../../../lib/nmodl/ode.py
+[  1%] Generating ../../share/modfile/expsyn.mod
 [  1%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Binomial.cpp.o
+[  1%] Building CXX object src/sparse13/CMakeFiles/sparse13.dir/spfactor.cpp.o
+[  1%] Generating ../../../../lib/nmodl/symtab.py
+[  1%] Generating ../../share/modfile/hh.mod
+[  1%] Building CXX object src/nrnpython/CMakeFiles/rxdmath.dir/rxdmath.cpp.o
+[  1%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/DiscUnif.cpp.o
+[  1%] Building CXX object src/sparse13/CMakeFiles/sparse13.dir/spoutput.cpp.o
 [  2%] Generating ../../../../lib/nmodl/visitor.py
-[  2%] Generating ../../share/modfile/expsyn.mod
-[  2%] Building CXX object src/sparse13/CMakeFiles/sparse13.dir/spfactor.cpp.o
-[  2%] Building CXX object src/nrnpython/CMakeFiles/rxdmath.dir/rxdmath.cpp.o
-[  2%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/DiscUnif.cpp.o
-[  2%] Generating ../../share/modfile/hh.mod
-[  2%] Building CXX object src/sparse13/CMakeFiles/sparse13.dir/spoutput.cpp.o
-[  3%] Generating ../oc/hocusr.h
+[  2%] Generating ../../share/modfile/netstim.mod
 [  3%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Erlang.cpp.o
-[  3%] Generating ../../share/modfile/netstim.mod
+[  3%] Generating ../oc/hocusr.h
 [  3%] Building CXX object src/sparse13/CMakeFiles/sparse13.dir/spsolve.cpp.o
-[  3%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Geom.cpp.o
-[  3%] [FLEX][modlunitlexer] Building scanner with flex 2.6.1
 [  3%] Generating ../../share/modfile/passive.mod
-[  4%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/HypGeom.cpp.o
+[  3%] [FLEX][modlunitlexer] Building scanner with flex 2.6.1
+[  3%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Geom.cpp.o
 [  4%] Building CXX object src/sparse13/CMakeFiles/sparse13.dir/sputils.cpp.o
-[  4%] [FLEX][nocmodllexer] Building scanner with flex 2.6.1
-[  4%] [BISON][modlunitparser] Building parser with bison 3.0.4
 [  4%] Generating ../../share/modfile/pattern.mod
-[  4%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/LogNorm.cpp.o
-[  4%] [BISON][nocmodlparser] Building parser with bison 3.0.4
-[  4%] [BISON][ocparser] Building parser with bison 3.0.4
+[  4%] [BISON][modlunitparser] Building parser with bison 3.0.4
+[  4%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/HypGeom.cpp.o
+[  4%] [FLEX][nocmodllexer] Building scanner with flex 2.6.1
 [  5%] Generating ../../share/modfile/stim.mod
+[  5%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/LogNorm.cpp.o
+[  5%] [BISON][ocparser] Building parser with bison 3.0.4
+[  5%] [BISON][nocmodlparser] Building parser with bison 3.0.4
+[  5%] Generating ../../share/modfile/svclmp.mod
 [  5%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/MCellRan4RNG.cpp.o
 [  5%] [BISON][nocmodlparser] Building diffeq with bison 3.0.4
-../src/nocmodl/parse1.ypp: warning: 3 shift/reduce conflicts [-Wconflicts-sr]
 ../src/oc/parse.ypp: warning: 108 shift/reduce conflicts [-Wconflicts-sr]
-[  5%] Generating ../../share/modfile/svclmp.mod
+../src/nocmodl/parse1.ypp: warning: 3 shift/reduce conflicts [-Wconflicts-sr]
 [  5%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/mcran4.cpp.o
 [  6%] Building CXX object src/nrnpython/CMakeFiles/nanobind.dir/__/__/external/nanobind/src/nb_combined.cpp.o
 ../src/nocmodl/diffeq.ypp: warning: 5 shift/reduce conflicts [-Wconflicts-sr]
 [  6%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/NegExp.cpp.o
 [  6%] Update hh.mod for CoreNEURON compatibility
 [  6%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Normal.cpp.o
-[  6%] Generating help_data.dat
 [  6%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/NrnRandom123RNG.cpp.o
-[  6%] Generating include/neuron/model_data_fwd.hpp
+[  6%] Generating help_data.dat
 [  6%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/nrnran123.cpp.o
-[  6%] Generating include/mcran4.h
-[  6%] Generating share/nrn/demo/testca.hoc
+[  6%] Generating include/neuron/model_data_fwd.hpp
+[  7%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Poisson.cpp.o
+[  7%] Generating include/mcran4.h
+[  7%] Generating share/nrn/demo/testca.hoc
+[  7%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Rand.cpp.o
 [  7%] Generating share/nrn/demo/cycle.hoc
-[  8%] Built target nmodl_copy_solver_files
-[  8%] Generating include/nrnran123.h
-[  8%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Poisson.cpp.o
-[  8%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Rand.cpp.o
-[  8%] Generating share/nrn/lib/auditscripts/gettarname
-[  8%] Generating ../../share/nrn/nrnmain.cpp
-[  8%] Generating include/backtrace_utils.h
+[  7%] Generating include/nrnran123.h
 [  8%] Generating share/nrn/lib/shape.cm2
-[  8%] Generating share/nrn/demo/d3init.hoc
 [  8%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Random.cpp.o
-[  8%] Generating share/nrn/demo/demo.hoc
-[  8%] Generating share/nrn/lib/auditscripts/hocaudit.sh
-[  8%] Generating include/bbsavestate.h
+[  8%] Generating share/nrn/demo/d3init.hoc
+[  8%] Generating include/backtrace_utils.h
+[  8%] Generating ../../share/nrn/nrnmain.cpp
+[  8%] Generating share/nrn/lib/auditscripts/gettarname
 [  8%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Uniform.cpp.o
-[  8%] Generating share/nrn/demo/demo.ses
-[  8%] Generating share/nrn/lib/auditscripts/notes
+[  8%] Generating share/nrn/demo/demo.hoc
+[  8%] Generating include/bbsavestate.h
+[  8%] Generating share/nrn/lib/auditscripts/hocaudit.sh
 [  8%] Generating ../../include/nrnmpiuse.h
+[  8%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Weibull.cpp.o
+[  8%] Generating share/nrn/demo/demo.ses
 [  9%] Generating include/neuronapi.h
-[  9%] Building CXX object src/gnu/CMakeFiles/nrngnu.dir/Weibull.cpp.o
-[ 10%] Generating share/nrn/lib/auditscripts/retrieve.sh
+[  9%] Generating share/nrn/lib/auditscripts/notes
 [ 10%] Generating share/nrn/demo/dend3.ses
-[ 10%] Generating ../../include/nrncvode/nrnneosm.h
 [ 10%] Generating include/nrnmpidec.h
+[ 10%] Generating share/nrn/lib/auditscripts/retrieve.sh
 [ 10%] Generating share/nrn/demo/dend3/control.hoc
-[ 11%] Generating ../../include/nrnconf.h
-[ 11%] Generating include/cabvars.h
+[ 10%] Generating include/cabvars.h
 [ 11%] Generating share/nrn/lib/auditscripts/saveaudit
 [ 11%] Generating share/nrn/demo/dend3/dend3.nrn
-[ 11%] Generating share/nrn/lib/cleanup
-[ 11%] Generating ../../include/nrnconf.h
 [ 11%] Generating include/cabcode.h
+[ 11%] Generating share/nrn/lib/cleanup
 [ 11%] Generating share/nrn/demo/dend3/syn3.hoc
+[ 11%] Generating include/md1redef.h
 [ 11%] Generating share/nrn/lib/helpdict
 [ 11%] Generating ../../include/nrncvode/nrnneosm.h
-[ 11%] Generating include/md1redef.h
 [ 11%] Generating share/nrn/demo/dynchan.ses
-[ 11%] Generating share/nrn/lib/hoc/atoltool.hoc
-[ 11%] Generating ../../include/nrnmpiuse.h
 [ 11%] Generating include/md2redef.h
+[ 11%] Generating share/nrn/lib/hoc/atoltool.hoc
 [ 11%] Generating share/nrn/demo/dynclamp.hoc
-[ 11%] Generating share/nrn/lib/hoc/attshape.hoc
-[ 11%] Generating ../../share/nrn/nrnmain.cpp
 [ 11%] Generating include/membdef.h
+[ 11%] Generating share/nrn/lib/hoc/attshape.hoc
 [ 11%] Generating share/nrn/demo/dynclamp.ses
-[ 11%] Generating share/nrn/lib/hoc/binfo.hoc
 [ 11%] Generating include/ion_semantics.h
+[ 11%] Generating share/nrn/lib/hoc/binfo.hoc
 [ 11%] Generating share/nrn/demo/hh.hoc
-[ 11%] Generating share/nrn/lib/hoc/celbild.hoc
+[ 12%] Generating share/nrn/lib/hoc/celbild.hoc
 [ 12%] Generating include/membfunc.h
 [ 12%] Generating share/nrn/demo/hh.ses
-[ 12%] Generating share/nrn/lib/hoc/celbild/celbild1.hoc
 [ 12%] Generating include/multicore.h
+[ 12%] Generating share/nrn/lib/hoc/celbild/celbild1.hoc
 [ 12%] Generating share/nrn/demo/nomodel.hoc
+[ 12%] Generating ../../include/nrnconf.h
 [ 12%] Generating share/nrn/lib/hoc/celbild/celgeom.hoc
 [ 12%] Generating include/multisplit.h
 [ 13%] Generating share/nrn/demo/pyramid.nrn
 [ 13%] Generating share/nrn/lib/hoc/celbild/celmang.hoc
 [ 13%] Generating include/neuron.h
 [ 13%] Generating share/nrn/demo/pyramid.ses
-[ 14%] Generating share/nrn/lib/hoc/celbild/celmemb.hoc
 [ 14%] Generating include/nmodlmutex.h
+[ 14%] Generating share/nrn/lib/hoc/celbild/celmemb.hoc
 [ 14%] Generating share/nrn/demo/reconst.hoc
 [ 14%] Generating share/nrn/lib/hoc/celbild/celset.hoc
 [ 14%] Generating include/nrn_ansi.h
@@ -330,31 +334,33 @@ Generating link flags from name 'dl', beware that this can be fragile. Got: -ldl
 [ 15%] Generating include/options.h
 [ 15%] Generating share/nrn/demo/release/capump.mod
 [ 15%] Generating share/nrn/lib/hoc/chanbild/exp.hoc
+[ 15%] Generating include/section_fwd.hpp
+[ 15%] Generating ../../include/nrnconf.h
 [ 16%] Generating share/nrn/demo/release/invlfire.mod
 [ 17%] Generating share/nrn/lib/hoc/chanbild/gategui.hoc
-[ 17%] Generating include/section_fwd.hpp
-[ 17%] Generating share/nrn/demo/release/khhchan.mod
+[ 17%] Generating ../../include/nrncvode/nrnneosm.h
 [ 17%] Generating share/nrn/lib/hoc/chanbild/kschanbg.hoc
-[ 17%] Generating include/treeset.h
-[ 17%] Generating share/nrn/lib/hoc/chanbild/ksgate.hoc
+[ 17%] Generating ../../include/nrnmpiuse.h
+[ 17%] Generating ../../share/nrn/nrnmain.cpp
 [ 17%] Built target nmodl_copy_python_files
 [ 17%] Built target coreneuron-copy-nrnivmodl-core-dependencies
-[ 17%] Built target oc_generated_files
 [ 17%] Built target modlunit_generated_files
 [ 17%] Built target nocmodl_generated_files
+[ 17%] Generating include/treeset.h
+[ 17%] Built target oc_generated_files
+[ 17%] Generating share/nrn/demo/release/khhchan.mod
 [ 18%] Generating include/classreg.h
 [ 18%] Built target build-time-copy-e019ec30c3e445127890ea6e30f6f4581e0dc4322c384a941c920b4addd899c5
 [ 18%] Generating share/nrn/demo/release/nacaex.mod
+[ 18%] Generating share/nrn/lib/hoc/chanbild/ksgate.hoc
 [ 18%] Generating include/hoc.h
-[ 18%] Built target build-time-copy-e8b2724532c46440e398dee0219a9c1746d43d1035e2d17135105ce638c1c408
 [ 18%] Generating share/nrn/demo/release/nachan.mod
 [ 18%] Generating share/nrn/lib/hoc/chanbild/ksstate.hoc
 [ 18%] Generating include/hocassrt.h
-[ 18%] Built target build-time-copy-f58a39231609457a680b0b06a5e1fcdebd80a3fd79f12b27985ecbad8a2585e0
+[ 18%] Built target build-time-copy-e8b2724532c46440e398dee0219a9c1746d43d1035e2d17135105ce638c1c408
 [ 18%] Generating share/nrn/demo/release/release.mod
 [ 18%] Generating share/nrn/lib/hoc/chanbild/kstgui.hoc
 [ 19%] Generating include/hocdec.h
-[ 19%] Built target build-time-copy-e2f2d0c9217d702a325ebffb7d7e303e1f8ec1c010474445086cf14244054f6c
 [ 19%] Generating share/nrn/demo/singhh.hoc
 [ 19%] Generating share/nrn/lib/hoc/chanbild/kstrans.hoc
 [ 19%] Generating include/hocgetsym.h
@@ -367,7 +373,7 @@ Generating link flags from name 'dl', beware that this can be fragile. Got: -ldl
 [ 19%] Generating share/nrn/demo/sync/cell.hoc
 [ 19%] Generating share/nrn/lib/hoc/chanbild/sigmoid.hoc
 [ 19%] Generating include/mech_api.h
-[ 19%] Built target nrnivmodl_dependency
+[ 19%] Built target build-time-copy-f58a39231609457a680b0b06a5e1fcdebd80a3fd79f12b27985ecbad8a2585e0
 [ 19%] Generating share/nrn/demo/sync/demosync.hoc
 [ 19%] Generating share/nrn/lib/hoc/chanbild/table.hoc
 [ 19%] Generating include/memory.hpp
@@ -383,12 +389,13 @@ Generating link flags from name 'dl', beware that this can be fragile. Got: -ldl
 [ 22%] Generating share/nrn/demo/sync/synchronize.hoc
 [ 22%] Generating share/nrn/lib/hoc/funfit.hoc
 [ 22%] Generating include/nrnrandom.h
+[ 22%] Built target build-time-copy-e2f2d0c9217d702a325ebffb7d7e303e1f8ec1c010474445086cf14244054f6c
 [ 22%] Generating share/nrn/lib/hoc/gatherv.hoc
 [ 22%] Generating include/oc_ansi.h
-[ 22%] Generating share/nrn/lib/hoc/grapher.hoc
-[ 22%] Generating include/ocfunc.h
 [ 22%] Built target generate_hocusr_header
 [ 22%] Linking CXX static library ../../lib/libsparse13.a
+[ 22%] Generating share/nrn/lib/hoc/grapher.hoc
+[ 22%] Generating include/ocfunc.h
 [ 22%] Generating share/nrn/lib/hoc/impedanc.hoc
 [ 22%] Generating include/ocmisc.h
 [ 22%] Generating share/nrn/lib/hoc/impedanx.hoc
@@ -398,13 +405,13 @@ Generating link flags from name 'dl', beware that this can be fragile. Got: -ldl
 [ 22%] Generating share/nrn/lib/hoc/import3d/import3d_gui.hoc
 [ 22%] Generating include/crout.hpp
 [ 23%] Generating share/nrn/lib/hoc/import3d/import3d_sec.hoc
-[ 23%] Generating include/crout_thread.hpp
 [ 23%] Linking CXX shared library ../../lib/librxdmath.so
+[ 23%] Generating include/crout_thread.hpp
 [ 23%] Generating share/nrn/lib/hoc/import3d/read_morphml.hoc
 [ 23%] Generating include/deflate.hpp
+[ 23%] Built target hh_update
 [ 23%] Generating share/nrn/lib/hoc/import3d/read_nlcda.hoc
 [ 23%] Generating include/dimplic.hpp
-[ 23%] Built target hh_update
 [ 23%] Generating share/nrn/lib/hoc/import3d/read_nlcda3.hoc
 [ 23%] Generating include/errcodes.hpp
 [ 23%] Generating share/nrn/lib/hoc/import3d/read_nts.hoc
@@ -412,150 +419,151 @@ Generating link flags from name 'dl', beware that this can be fragile. Got: -ldl
 [ 23%] Generating share/nrn/lib/hoc/import3d/read_swc.hoc
 [ 23%] Generating include/euler_thread.hpp
 [ 23%] Generating share/nrn/lib/hoc/impratio.hoc
-[ 23%] Generating include/newton.hpp
-[ 23%] Generating share/nrn/lib/hoc/inserter.hoc
-[ 23%] Generating share/nrn/lib/hoc/lincir.hoc
 [ 23%] Built target help_data_dat
-[ 23%] Generating include/newton_struct.h
+[ 23%] Generating share/nrn/lib/hoc/inserter.hoc
+[ 23%] Built target nrnivmodl_dependency
+[ 23%] Generating include/newton.hpp
 [ 23%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/consist.cpp.o
-[ 23%] Generating include/newton_thread.hpp
-[ 23%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/declare.cpp.o
-[ 23%] Generating share/nrn/lib/hoc/lincir/elmbase.hoc
-[ 23%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/consist.cpp.o
-[ 23%] Generating include/row_view.hpp
-[ 23%] Linking CXX static library ../../lib/libnrngnu.a
-[ 23%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/init.cpp.o
 [ 23%] Built target corenrn_mpi
+[ 23%] Generating include/newton_struct.h
+[ 23%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/declare.cpp.o
+[ 23%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/consist.cpp.o
+[ 23%] Generating share/nrn/lib/hoc/lincir.hoc
+[ 23%] Generating include/newton_thread.hpp
+[ 23%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/init.cpp.o
+[ 23%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/deriv.cpp.o
+[ 23%] Generating share/nrn/lib/hoc/lincir/elmbase.hoc
+[ 23%] Generating include/row_view.hpp
+[ 23%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/io.cpp.o
+[ 23%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/discrete.cpp.o
+[ 23%] Linking CXX static library ../../lib/libnrngnu.a
 [ 24%] Generating share/nrn/lib/hoc/lincir/lincir1.hoc
-[ 24%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/deriv.cpp.o
 [ 24%] Generating include/runge.hpp
-[ 24%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/io.cpp.o
-[ 24%] Generating share/nrn/lib/hoc/lincir/lingraph.hoc
-[ 24%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/discrete.cpp.o
-[ 24%] Generating include/scoplib.h
 [ 24%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/kinunit.cpp.o
-[ 24%] Generating share/nrn/lib/hoc/lincir/linmech.hoc
 [ 24%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/init.cpp.o
-[ 24%] Generating include/simeq.hpp
+[ 24%] Generating share/nrn/lib/hoc/lincir/lingraph.hoc
+[ 24%] Generating include/scoplib.h
 [ 24%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/list.cpp.o
-[ 24%] Generating share/nrn/lib/hoc/loadbal.hoc
 [ 24%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/io.cpp.o
-[ 24%] Generating include/sparse.hpp
+[ 24%] Generating share/nrn/lib/hoc/lincir/linmech.hoc
+[ 24%] Generating include/simeq.hpp
 [ 24%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/model.cpp.o
-[ 24%] Copying /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/share/demo to /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/share/nrn/demo
-[ 24%] Generating share/nrn/lib/hoc/logax.hoc
 [ 24%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/kinetic.cpp.o
-[ 24%] Generating include/sparse_thread.hpp
+[ 24%] Generating share/nrn/lib/hoc/loadbal.hoc
+[ 24%] Generating include/sparse.hpp
 [ 25%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/nrnunit.cpp.o
-[ 25%] Generating share/nrn/lib/hoc/macload.hoc
 [ 26%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/list.cpp.o
-[ 26%] Generating include/ssimplic.hpp
+[ 26%] Copying /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/share/demo to /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/share/nrn/demo
+[ 26%] Generating share/nrn/lib/hoc/logax.hoc
+[ 26%] Generating include/sparse_thread.hpp
 [ 26%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/passn.cpp.o
-[ 26%] Generating share/nrn/lib/hoc/mkcurve.hoc
 [ 26%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/modl.cpp.o
-[ 26%] Generating include/ssimplic_thread.hpp
+[ 26%] Generating share/nrn/lib/hoc/macload.hoc
+[ 26%] Generating include/ssimplic.hpp
 [ 26%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/symbol.cpp.o
-[ 26%] Generating share/nrn/lib/hoc/mknrndll.hoc
 [ 26%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/nocpout.cpp.o
-[ 26%] Generating include/spconfig.h
+[ 26%] Generating share/nrn/lib/hoc/mkcurve.hoc
+[ 26%] Generating include/ssimplic_thread.hpp
 [ 26%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/units.cpp.o
-[ 26%] Generating share/nrn/lib/hoc/modlunit.hoc
 [ 26%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/noccout.cpp.o
+[ 26%] Generating share/nrn/lib/hoc/mknrndll.hoc
+[ 26%] Generating include/spconfig.h
+[ 26%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/units1.cpp.o
+[ 26%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/parsact.cpp.o
+[ 26%] Generating share/nrn/lib/hoc/modlunit.hoc
 [ 27%] Generating include/spmatrix.h
-[ 27%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/__/modlunit/units1.cpp.o
-[ 27%] Generating share/nrn/lib/hoc/movierun.hoc
-[ 27%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/parsact.cpp.o
-[ 27%] Generating include/neuron/cache/mechanism_range.hpp
 [ 27%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/modlunit_generated/lex.cpp.o
+[ 27%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/netrec_discon.cpp.o
+[ 27%] Generating share/nrn/lib/hoc/movierun.hoc
+[ 27%] Generating include/neuron/cache/mechanism_range.hpp
+[ 27%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/modlunit_generated/parse1.cpp.o
+[ 27%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/simultan.cpp.o
 [ 28%] Generating share/nrn/lib/hoc/mulfit.hoc
-[ 28%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/netrec_discon.cpp.o
 [ 28%] Generating include/neuron/container/data_handle.hpp
-[ 28%] Building CXX object src/nrniv/CMakeFiles/modlunit.dir/modlunit_generated/parse1.cpp.o
-[ 28%] Generating share/nrn/lib/hoc/mulfit/clampfit.hoc
-[ 28%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/simultan.cpp.o
-[ 28%] Generating include/neuron/container/generic_data_handle.hpp
-[ 28%] Generating share/nrn/lib/hoc/mulfit/e_actpot.hoc
 [ 28%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/solve.cpp.o
-[ 28%] Generating include/neuron/container/non_owning_soa_identifier.hpp
-[ 28%] Generating share/nrn/lib/hoc/mulfit/e_norm.hoc
+[ 28%] Generating share/nrn/lib/hoc/mulfit/clampfit.hoc
+[ 28%] Generating include/neuron/container/generic_data_handle.hpp
 [ 28%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/nocmodl/symbol.cpp.o
-[ 28%] Generating share/nrn/lib/hoc/mulfit/e_xy.hoc
+[ 28%] Generating share/nrn/lib/hoc/mulfit/e_actpot.hoc
+[ 28%] Generating include/neuron/container/non_owning_soa_identifier.hpp
 [ 29%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/__/modlunit/units.cpp.o
-[ 29%] Generating share/nrn/lib/hoc/mulfit/e_y.hoc
+[ 29%] Generating share/nrn/lib/hoc/mulfit/e_norm.hoc
 [ 29%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/nocmodl_generated/lex.cpp.o
-[ 29%] Generating share/nrn/lib/hoc/mulfit/eonefunc.hoc
+[ 29%] Generating share/nrn/lib/hoc/mulfit/e_xy.hoc
 [ 29%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/nocmodl_generated/parse1.cpp.o
-[ 29%] Generating share/nrn/lib/hoc/mulfit/eoneprim.hoc
+[ 29%] Generating share/nrn/lib/hoc/mulfit/e_y.hoc
+[ 29%] Linking CXX static library ../../lib/libfmt.a
 [ 29%] Building CXX object src/nrniv/CMakeFiles/nocmodl.dir/nocmodl_generated/diffeq.cpp.o
+[ 29%] Generating share/nrn/lib/hoc/mulfit/eonefunc.hoc
+[ 29%] Generating share/nrn/lib/hoc/mulfit/eoneprim.hoc
 [ 29%] Generating share/nrn/lib/hoc/mulfit/eonerun.hoc
 [ 29%] Generating share/nrn/lib/hoc/mulfit/eparmlst.hoc
 [ 30%] Generating share/nrn/lib/hoc/mulfit/fitparm.hoc
 [ 30%] Generating share/nrn/lib/hoc/mulfit/mulfit1.hoc
-[ 30%] Linking CXX static library ../../lib/libfmt.a
 [ 30%] Generating share/nrn/lib/hoc/mulfit/optwrap.hoc
 [ 30%] Generating share/nrn/lib/hoc/mulfit/protorun.hoc
-[ 30%] Generating share/nrn/lib/hoc/mview.hoc
 [ 30%] Built target copy_share_demo_to_build
 [ 30%] Built target rxdmath
 [ 30%] Built target sparse13
+[ 30%] Generating share/nrn/lib/hoc/mview.hoc
 [ 30%] Generating share/nrn/lib/hoc/mview/allcell.hoc
 [ 30%] Generating share/nrn/lib/hoc/mview/allpp.hoc
 [ 30%] Generating share/nrn/lib/hoc/mview/artview.hoc
 [ 30%] Generating share/nrn/lib/hoc/mview/distinct.hoc
-[ 30%] Generating share/nrn/lib/hoc/mview/distinctparm.hoc
 [ 30%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/apps/corenrn_parameters.cpp.o
+[ 30%] Generating share/nrn/lib/hoc/mview/distinctparm.hoc
+[ 30%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/apps/main1.cpp.o
 [ 31%] Generating share/nrn/lib/hoc/mview/mview1.hoc
-[ 31%] Built target nrnversion_h
-[ 31%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/apps/main1.cpp.o
-[ 31%] Generating share/nrn/lib/hoc/mview/mviewgui.hoc
 [ 31%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/gpu/nrn_acc_manager.cpp.o
-[ 31%] Generating share/nrn/lib/hoc/mview/mviewxml.hoc
+[ 31%] Generating share/nrn/lib/hoc/mview/mviewgui.hoc
+[ 31%] Built target nrnversion_h
 [ 31%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/core2nrn_data_return.cpp.o
+[ 31%] Generating share/nrn/lib/hoc/mview/mviewxml.hoc
+[ 31%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/global_vars.cpp.o
 [ 31%] Generating share/nrn/lib/hoc/mview/ncview.hoc
 [ 31%] Copying headers to build directory
-[ 31%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/global_vars.cpp.o
-[ 31%] Generating share/nrn/lib/hoc/mview/parmsets.hoc
 [ 31%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/lfp.cpp.o
-[ 31%] Generating share/nrn/lib/hoc/mview/parmvals.hoc
+[ 31%] Generating share/nrn/lib/hoc/mview/parmsets.hoc
 [ 31%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/mech_report.cpp.o
-[ 31%] Generating share/nrn/lib/hoc/mview/ppanal.hoc
+[ 31%] Generating share/nrn/lib/hoc/mview/parmvals.hoc
 [ 32%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/mem_layout_util.cpp.o
-[ 32%] Generating share/nrn/lib/hoc/mview/rcclasses.hoc
+[ 32%] Generating share/nrn/lib/hoc/mview/ppanal.hoc
 [ 32%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/mk_mech.cpp.o
-[ 32%] Generating share/nrn/lib/hoc/mview/realcell.hoc
+[ 32%] Generating share/nrn/lib/hoc/mview/rcclasses.hoc
 [ 32%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/nrn2core_data_init.cpp.o
-[ 32%] Generating share/nrn/lib/hoc/mview/secanal.hoc
+[ 32%] Generating share/nrn/lib/hoc/mview/realcell.hoc
 [ 32%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/nrn_checkpoint.cpp.o
+[ 32%] Generating share/nrn/lib/hoc/mview/secanal.hoc
+[ 32%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/nrn_filehandler.cpp.o
 [ 33%] Generating share/nrn/lib/hoc/mview/treeview.hoc
-[ 33%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/nrn_filehandler.cpp.o
-[ 33%] Generating share/nrn/lib/hoc/netbild.hoc
 [ 33%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/nrn_setup.cpp.o
-[ 33%] Generating share/nrn/lib/hoc/netbild/artcel.hoc
+[ 33%] Generating share/nrn/lib/hoc/netbild.hoc
 [ 33%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/output_spikes.cpp.o
-[ 33%] Generating share/nrn/lib/hoc/netbild/edgegui.hoc
+[ 33%] Generating share/nrn/lib/hoc/netbild/artcel.hoc
 [ 33%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/phase1.cpp.o
-[ 33%] Generating share/nrn/lib/hoc/netbild/grstrlst.hoc
-[ 33%] Linking CXX static library ../../lib/libnanobind.a
+[ 33%] Generating share/nrn/lib/hoc/netbild/edgegui.hoc
 [ 33%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/phase2.cpp.o
-[ 33%] Generating share/nrn/lib/hoc/netbild/netdata.hoc
+[ 33%] Generating share/nrn/lib/hoc/netbild/grstrlst.hoc
 [ 33%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/phase3.cpp.o
-[ 33%] Generating share/nrn/lib/hoc/netbild/netgui.hoc
+[ 33%] Generating share/nrn/lib/hoc/netbild/netdata.hoc
 [ 34%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/prcellstate.cpp.o
-[ 34%] Generating share/nrn/lib/hoc/netbild/netready.hoc
+[ 34%] Generating share/nrn/lib/hoc/netbild/netgui.hoc
 [ 34%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/reports/nrnreport.cpp.o
-[ 34%] Generating share/nrn/lib/hoc/netbild/spkplot.hoc
+[ 34%] Generating share/nrn/lib/hoc/netbild/netready.hoc
+[ 34%] Linking CXX static library ../../lib/libnanobind.a
 [ 34%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/reports/report_configuration_parser.cpp.o
-[ 34%] Generating share/nrn/lib/hoc/netbild/syntypes.hoc
+[ 34%] Generating share/nrn/lib/hoc/netbild/spkplot.hoc
 [ 34%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/reports/report_event.cpp.o
+[ 34%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/reports/report_handler.cpp.o
+[ 34%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/reports/sonata_report_handler.cpp.o
+[ 34%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/setup_fornetcon.cpp.o
+[ 34%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/mechanism/capac.cpp.o
+[ 34%] Generating share/nrn/lib/hoc/netbild/syntypes.hoc
+[ 34%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/mechanism/eion.cpp.o
+[ 34%] Built target nrngnu
+[ 34%] Built target copy_headers_to_build
+[ 34%] Built target fmt
 [ 35%] Generating share/nrn/lib/hoc/netparmpi.hoc
-[ 35%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/reports/report_handler.cpp.o
-[ 35%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/reports/sonata_report_handler.cpp.o
-[ 35%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/io/setup_fornetcon.cpp.o
-[ 35%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/mechanism/capac.cpp.o
-[ 35%] Built target nrngnu
-[ 35%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/mechanism/eion.cpp.o
-[ 35%] Built target copy_headers_to_build
-[ 35%] Built target fmt
 [ 35%] Generating share/nrn/lib/hoc/noload.hoc
 [ 35%] Built target pyastgen
 [ 35%] Generating share/nrn/lib/hoc/nrngui.hoc
@@ -567,172 +575,171 @@ Generating link flags from name 'dl', beware that this can be fragile. Got: -ldl
 [ 36%] Generating share/nrn/lib/hoc/pointbsr.hoc
 [ 36%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/mechanism/register_mech.cpp.o
 [ 36%] Generating share/nrn/lib/hoc/pointgrp.hoc
-[ 36%] Generating share/nrn/lib/hoc/pointman.hoc
 [ 36%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/mpi/core/nrnmpi_def_cinc.cpp.o
-[ 36%] Generating share/nrn/lib/hoc/prcellstate.hoc
+[ 36%] Generating share/nrn/lib/hoc/pointman.hoc
 [ 36%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/cvodestb.cpp.o
+[ 36%] Generating share/nrn/lib/hoc/prcellstate.hoc
+[ 36%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/multisend.cpp.o
 [ 37%] Generating share/nrn/lib/hoc/runfit.hoc
-[ 37%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/multisend.cpp.o
-[ 37%] Generating share/nrn/lib/hoc/shapebox.hoc
 [ 37%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/multisend_setup.cpp.o
-[ 37%] Generating share/nrn/lib/hoc/showmech.hoc
-[ 37%] Built target generated_source_files
+[ 37%] Generating share/nrn/lib/hoc/shapebox.hoc
 [ 37%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/netcvode.cpp.o
-[ 37%] Generating share/nrn/lib/hoc/single.hoc
+[ 37%] Generating share/nrn/lib/hoc/showmech.hoc
 [ 37%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/netpar.cpp.o
-[ 37%] Generating share/nrn/lib/hoc/single1.hoc
+[ 37%] Generating share/nrn/lib/hoc/single.hoc
+[ 37%] Built target generated_source_files
 [ 37%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/partrans.cpp.o
-[ 37%] Generating share/nrn/lib/hoc/stdgui.hoc
+[ 37%] Generating share/nrn/lib/hoc/single1.hoc
 [ 37%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/partrans_setup.cpp.o
-[ 37%] Generating share/nrn/lib/hoc/stdlib.hoc
+[ 37%] Generating share/nrn/lib/hoc/stdgui.hoc
 [ 38%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/network/tqueue.cpp.o
-[ 38%] Generating share/nrn/lib/hoc/stdrun.hoc
+[ 38%] Generating share/nrn/lib/hoc/stdlib.hoc
 [ 38%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/permute/balance.cpp.o
-[ 38%] Generating share/nrn/lib/hoc/subiter.hoc
+[ 38%] Generating share/nrn/lib/hoc/stdrun.hoc
 [ 38%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/permute/cellorder.cpp.o
-[ 38%] Generating share/nrn/lib/hoc/thresh.hoc
+[ 38%] Generating share/nrn/lib/hoc/subiter.hoc
 [ 38%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/permute/cellorder1.cpp.o
+[ 38%] Generating share/nrn/lib/hoc/thresh.hoc
+[ 38%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/permute/cellorder2.cpp.o
 [ 39%] Generating share/nrn/lib/hoc/varmeth1.hoc
-[ 39%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/permute/cellorder2.cpp.o
-[ 39%] Generating share/nrn/lib/hoc/vecwrap.hoc
 [ 39%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/permute/data_layout.cpp.o
-[ 39%] Generating share/nrn/lib/hoc/vplay.hoc
+[ 39%] Generating share/nrn/lib/hoc/vecwrap.hoc
 [ 39%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/permute/node_permute.cpp.o
-[ 39%] Generating share/nrn/lib/hoc/wingroup.hoc
+[ 39%] Generating share/nrn/lib/hoc/vplay.hoc
 [ 39%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/fadvance_core.cpp.o
-[ 39%] Generating share/nrn/lib/hocload.sh
 [ 39%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/fast_imem.cpp.o
-[ 39%] Generating share/nrn/lib/nrn.defaults.in
 [ 39%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/finitialize.cpp.o
 [ 40%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/multicore.cpp.o
 [ 40%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/scopmath/abort.cpp.o
-[ 40%] Linking CXX executable ../../bin/modlunit
+[ 40%] Generating share/nrn/lib/hoc/wingroup.hoc
 [ 40%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/scopmath/newton_thread.cpp.o
+[ 40%] Generating share/nrn/lib/hocload.sh
 [ 40%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/solve_core.cpp.o
-[ 40%] Generating share/nrn/lib/prologue.id
+[ 40%] Linking CXX executable ../../bin/modlunit
 [ 40%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/sim/treeset_core.cpp.o
-[ 40%] Built target nanobind
+[ 40%] Generating share/nrn/lib/nrn.defaults.in
+[ 40%] Generating share/nrn/lib/prologue.id
+[ 40%] Building CXX object external/nmodl/ext/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o
+[ 40%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/ivocvect.cpp.o
 [ 40%] Generating share/nrn/lib/python/neuron/__init__.py
+[ 40%] Building CXX object external/nmodl/ext/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o
+[ 40%] Building CXX object external/nmodl/src/pybind/CMakeFiles/pywrapper.dir/wrapper.cpp.o
 [ 40%] Generating share/nrn/lib/python/neuron/config.py
-[ 41%] Generating share/nrn/lib/python/neuron/coreneuron.py
-[ 41%] Building CXX object external/nmodl/ext/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o
-[ 41%] Generating share/nrn/lib/python/neuron/crxd/__init__.py
-[ 41%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/ivocvect.cpp.o
-[ 41%] Building CXX object external/nmodl/src/pybind/CMakeFiles/pywrapper.dir/wrapper.cpp.o
-[ 41%] Building CXX object external/nmodl/ext/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o
-[ 41%] Generating share/nrn/lib/python/neuron/doc.py
-[ 41%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/lpt.cpp.o
-[ 41%] Generating share/nrn/lib/python/neuron/expect_hocerr.py
-[ 41%] Building CXX object external/nmodl/ext/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o
-[ 41%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/memory.cpp.o
-[ 41%] Generating share/nrn/lib/python/neuron/gui.py
-[ 41%] Building CXX object external/nmodl/ext/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o
+[ 40%] Building CXX object external/nmodl/ext/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o
+[ 40%] Building CXX object external/nmodl/ext/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o
 [ 41%] Building CXX object external/nmodl/ext/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o
-[ 41%] Generating share/nrn/lib/python/neuron/gui2/__init__.py
-[ 41%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/memory_utils.cpp.o
-[ 41%] Generating share/nrn/lib/python/neuron/gui2/config.py
 [ 41%] Building CXX object external/nmodl/ext/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o
+[ 41%] Generating share/nrn/lib/python/neuron/crxd/__init__.py
+[ 41%] Generating share/nrn/lib/python/neuron/coreneuron.py
+[ 41%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/lpt.cpp.o
+[ 41%] Generating share/nrn/lib/python/neuron/doc.py
+[ 41%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/memory.cpp.o
+[ 41%] Generating share/nrn/lib/python/neuron/expect_hocerr.py
+[ 41%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/memory_utils.cpp.o
+[ 41%] Built target nanobind
+[ 41%] Generating share/nrn/lib/python/neuron/gui.py
 [ 41%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/nrn_stats.cpp.o
-[ 41%] Generating share/nrn/lib/python/neuron/gui2/plotshape.py
-[ 42%] Generating share/nrn/lib/python/neuron/gui2/rangevar.py
+[ 41%] Generating share/nrn/lib/python/neuron/gui2/__init__.py
+[ 42%] Generating share/nrn/lib/python/neuron/gui2/config.py
 [ 42%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/nrntimeout.cpp.o
-[ 42%] Generating share/nrn/lib/python/neuron/gui2/setup_threejs.py
-[ 42%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/nrnoc_aux.cpp.o
+[ 42%] Generating share/nrn/lib/python/neuron/gui2/rangevar.py
+[ 42%] Generating share/nrn/lib/python/neuron/gui2/plotshape.py
 [ 42%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/progressbar/progressbar.cpp.o
+[ 42%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/nrnoc_aux.cpp.o
+[ 42%] Generating share/nrn/lib/python/neuron/gui2/setup_threejs.py
 [ 43%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/randoms/nrnran123.cpp.o
 [ 43%] Generating share/nrn/lib/python/neuron/hclass3.py
 [ 43%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/string_utils.cpp.o
-[ 43%] Generating share/nrn/lib/python/neuron/neuroml/__init__.py
 [ 43%] Generating share/nrn/lib/python/neuron/gui2/utilities.py
 [ 43%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/utils.cpp.o
+[ 43%] Generating share/nrn/lib/python/neuron/neuroml/__init__.py
 [ 43%] Generating share/nrn/lib/python/neuron/neuroml/biophysics.py
-[ 43%] Generating share/nrn/lib/python/neuron/neuroml/metadata.py
 [ 43%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/utils/vrecord.cpp.o
+[ 43%] Generating share/nrn/lib/python/neuron/neuroml/metadata.py
 [ 43%] Generating share/nrn/lib/python/neuron/neuroml/morphml.py
 [ 43%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/mpi/core/resolve.cpp.o
-[ 43%] Generating share/nrn/lib/python/neuron/neuroml/neuroml.py
 [ 43%] Building CXX object src/coreneuron/CMakeFiles/coreneuron-core.dir/__/__/coreneuron/config/config.cpp.o
+[ 43%] Generating share/nrn/lib/python/neuron/neuroml/neuroml.py
 [ 43%] Generating share/nrn/lib/python/neuron/neuroml/rdxml.py
 [ 43%] Generating share/nrn/lib/python/neuron/neuroml/xml2nrn.py
 [ 43%] Generating share/nrn/lib/python/neuron/nonvint_block_supervisor.py
-[ 44%] Generating share/nrn/lib/python/neuron/rxd/__init__.py
-[ 44%] Generating share/nrn/lib/python/neuron/psection.py
 [ 44%] Generating share/nrn/lib/python/neuron/rxd/constants.py
+[ 44%] Generating share/nrn/lib/python/neuron/rxd/__init__.py
 [ 44%] Generating share/nrn/lib/python/neuron/rxd/dimension3.py
+[ 44%] Generating share/nrn/lib/python/neuron/psection.py
+[ 44%] Generating share/nrn/lib/python/neuron/rxd/geometry.py
 [ 44%] Generating share/nrn/lib/python/neuron/rxd/export.py
 [ 44%] Generating share/nrn/lib/python/neuron/rxd/generalizedReaction.py
-[ 44%] Generating share/nrn/lib/python/neuron/rxd/geometry.py
-[ 44%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/FullJoinMorph.py
-[ 44%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/GeneralizedVoxelization.py
+[ 45%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/FullJoinMorph.py
+[ 45%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/GeneralizedVoxelization.py
 [ 45%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/ctng.pyx
+[ 45%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/graphicsPrimitives.pyx
+[ 45%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/__init__.py
 [ 45%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/scalarField.py
 [ 45%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/simplevolume_helper.py
-[ 45%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/__init__.py
-[ 45%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/graphicsPrimitives.pyx
 [ 45%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/surface.py
 [ 45%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/surface_a.py
 [ 45%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/surfaces.pyx
 [ 45%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/triangularMesh.py
-[ 45%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpython.cpp.o
 [ 45%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/voxelize.py
-[ 46%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpy_hoc.cpp.o
-[ 46%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/voxelize2.py
 [ 46%] Generating share/nrn/lib/python/neuron/rxd/gui.py
-[ 46%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrn_metaclass.cpp.o
-[ 46%] Generating share/nrn/lib/python/neuron/rxd/initializer.py
-[ 46%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpy_nrn.cpp.o
+[ 46%] Generating share/nrn/lib/python/neuron/rxd/geometry3d/voxelize2.py
 [ 46%] Generating share/nrn/lib/python/neuron/rxd/multiCompartmentReaction.py
-[ 47%] Generating share/nrn/lib/python/neuron/rxd/node.py
-[ 47%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpy_utils.cpp.o
-[ 47%] Generating share/nrn/lib/python/neuron/rxd/nodelist.py
-[ 47%] Generating share/nrn/lib/python/neuron/rxd/options.py
-[ 47%] Generating share/nrn/lib/python/neuron/rxd/plugins.py
-[ 47%] Generating share/nrn/lib/python/neuron/rxd/rangevar.py
-[ 47%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/grids.cpp.o
-[ 47%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpy_p2h.cpp.o
-[ 47%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd.cpp.o
-[ 47%] Generating share/nrn/lib/python/neuron/rxd/rate.py
-[ 48%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_extracellular.cpp.o
-[ 48%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_intracellular.cpp.o
+[ 46%] Generating share/nrn/lib/python/neuron/rxd/initializer.py
+[ 46%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpython.cpp.o
+[ 46%] Generating share/nrn/lib/python/neuron/rxd/node.py
+[ 46%] Generating share/nrn/lib/python/neuron/rxd/nodelist.py
+[ 46%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpy_hoc.cpp.o
+[ 46%] Generating share/nrn/lib/python/neuron/rxd/options.py
+[ 46%] Generating share/nrn/lib/python/neuron/rxd/plugins.py
+[ 46%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrn_metaclass.cpp.o
+[ 46%] Generating share/nrn/lib/python/neuron/rxd/rangevar.py
+[ 46%] Generating share/nrn/lib/python/neuron/rxd/rate.py
+[ 46%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpy_nrn.cpp.o
+[ 48%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpy_utils.cpp.o
 [ 48%] Generating share/nrn/lib/python/neuron/rxd/region.py
-[ 48%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_vol.cpp.o
-[ 48%] Generating share/nrn/lib/python/neuron/rxd/reaction.py
-[ 48%] Generating share/nrn/lib/python/neuron/rxd/rxd.py
-[ 48%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_marching_cubes.cpp.o
+[ 48%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/grids.cpp.o
+[ 48%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/nrnpy_p2h.cpp.o
 [ 48%] Generating share/nrn/lib/python/neuron/rxd/rxdException.py
-[ 48%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_llgramarea.cpp.o
+[ 48%] Generating share/nrn/lib/python/neuron/rxd/rxd.py
 [ 48%] Generating share/nrn/lib/python/neuron/rxd/rxdmath.py
+[ 48%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd.cpp.o
+[ 48%] Generating share/nrn/lib/python/neuron/rxd/reaction.py
+[ 48%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_extracellular.cpp.o
 [ 48%] Generating share/nrn/lib/python/neuron/rxd/rxdsection.py
+[ 48%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_intracellular.cpp.o
+[ 48%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_vol.cpp.o
+[ 48%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_marching_cubes.cpp.o
 [ 48%] Generating share/nrn/lib/python/neuron/rxd/section1d.py
+[ 48%] Building CXX object src/nrnpython/CMakeFiles/nrnpython.dir/rxd_llgramarea.cpp.o
 [ 48%] Generating share/nrn/lib/python/neuron/rxd/species.py
 [ 48%] Generating share/nrn/lib/python/neuron/rxdtests/do_test.py
 [ 48%] Generating share/nrn/lib/python/neuron/rxdtests/readme.txt
-[ 49%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/include_flux3d.py
 [ 49%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/circadian_rhythm.py
 [ 49%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/include_flux3d_cvode.py
+[ 49%] Generating share/nrn/lib/python/neuron/rxdtests/run_all.py
 [ 49%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/multicompartment_reactions.py
 [ 49%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/pure_diffusion_3d.py
-[ 49%] Generating share/nrn/lib/python/neuron/rxdtests/run_all.py
+[ 49%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/include_flux3d.py
 [ 49%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/pure_diffusion_3d_cvode.py
 [ 49%] Generating share/nrn/lib/python/neuron/rxdtests/tests/3d/torun.txt
 [ 49%] Generating share/nrn/lib/python/neuron/rxdtests/tests/IraHH.py
-[ 50%] Generating share/nrn/lib/python/neuron/rxdtests/tests/c91662.swc
-[ 50%] Generating share/nrn/lib/python/neuron/rxdtests/tests/cabuf_fixed_step.py
 [ 50%] Generating share/nrn/lib/python/neuron/rxdtests/tests/cabuf.py
+[ 50%] Generating share/nrn/lib/python/neuron/rxdtests/tests/c91662.swc
 [ 50%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/ecs_before_sections.py
-[ 50%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ca_pump.py
+[ 50%] Generating share/nrn/lib/python/neuron/rxdtests/tests/cabuf_fixed_step.py
 [ 50%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/ecs_example_cvode.py
 [ 50%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/ecs_example.py
+[ 50%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ca_pump.py
 [ 50%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/ecs_include_flux.py
 [ 50%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/ecs_include_flux_cvode.py
 [ 50%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/ecs_multi_example.py
-[ 50%] Built target modlunit
 [ 50%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/ecs_multi_example_cvode.py
-[ 51%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hh.py
 [ 51%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/torun.txt
-[ 51%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/pump.mod
+[ 51%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hh.py
 [ 51%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hh_cvode.py
 [ 51%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hh_morph.py
+[ 51%] Generating share/nrn/lib/python/neuron/rxdtests/tests/ecs/pump.mod
 [ 51%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hh_param.py
 [ 51%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hh_param_cvode.py
 [ 51%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hybrid/bistable_hybrid.py
@@ -740,64 +747,65 @@ Generating link flags from name 'dl', beware that this can be fragile. Got: -ldl
 [ 51%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hybrid/bistable_hybrid_cvode.py
 [ 52%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hybrid/pure_diffusion_hybrid.py
 [ 52%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hybrid/pure_diffusion_hybrid_cvode.py
-[ 52%] Generating share/nrn/lib/python/neuron/rxdtests/tests/include_flux.py
 [ 52%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hybrid/torun.txt
 [ 52%] Generating share/nrn/lib/python/neuron/rxdtests/tests/hybrid/bistable_hybrid_cvode_change_nthread.py
+[ 52%] Generating share/nrn/lib/python/neuron/rxdtests/tests/include_flux.py
 [ 52%] Generating share/nrn/lib/python/neuron/rxdtests/tests/include_flux_cvode.py
 [ 52%] Generating share/nrn/lib/python/neuron/rxdtests/tests/multicompartment_mebrane_mismatch.py
 [ 52%] Generating share/nrn/lib/python/neuron/rxdtests/tests/multicompartment_reactions.py
 [ 52%] Generating share/nrn/lib/python/neuron/rxdtests/tests/multicompartment_reactions_del.py
-[ 53%] Generating share/nrn/lib/python/neuron/rxdtests/tests/pure_diffusion.py
 [ 52%] Generating share/nrn/lib/python/neuron/rxdtests/tests/multicompartment_reactions_with_v.py
+[ 53%] Generating share/nrn/lib/python/neuron/rxdtests/tests/pure_diffusion.py
+[ 53%] Generating share/nrn/lib/python/neuron/rxdtests/tests/nodes_update.py
 [ 53%] Generating share/nrn/lib/python/neuron/rxdtests/tests/pure_diffusion_cvode.py
 [ 53%] Generating share/nrn/lib/python/neuron/rxdtests/tests/react_region_specified.py
 [ 53%] Generating share/nrn/lib/python/neuron/rxdtests/tests/reaction_null_dest.py
 [ 53%] Generating share/nrn/lib/python/neuron/rxdtests/tests/reaction_param_test.py
-[ 53%] Generating share/nrn/lib/python/neuron/rxdtests/tests/nodes_update.py
 [ 53%] Generating share/nrn/lib/python/neuron/rxdtests/tests/reaction_test.py
 [ 53%] Generating share/nrn/lib/python/neuron/rxdtests/tests/torun.txt
 [ 53%] Generating share/nrn/lib/python/neuron/rxdtests/tests/verify_no_initialization_order_issue.py
-[ 53%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/cal2.mod
-[ 54%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/torun.txt
-[ 54%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_125_1.py
+[ 54%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/cal2.mod
 [ 54%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/readme.txt
+[ 54%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_125_1.py
+[ 54%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/torun.txt
 [ 54%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_25_5.py
 [ 54%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/caleak.mod
 [ 54%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_taper_125_1.py
-[ 54%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_taper_25_5.py
 [ 54%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_tree2_125_1.py
+[ 54%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_taper_25_5.py
 [ 54%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_tree2_25_5.py
-[ 55%] Generating share/nrn/lib/python/neuron/sections.py
 [ 55%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_tree_125_1.py
-[ 55%] Generating share/nrn/lib/python/neuron/tests/_subclass.py
+[ 55%] Generating share/nrn/lib/python/neuron/sections.py
 [ 55%] Generating share/nrn/lib/python/neuron/tests/__init__.py
 [ 55%] Generating share/nrn/lib/python/neuron/tests/test_all.py
+[ 55%] Generating share/nrn/lib/python/neuron/tests/_subclass.py
 [ 55%] Generating share/nrn/lib/python/neuron/tests/test_neuron.py
 [ 55%] Generating share/nrn/lib/python/neuron/rxdtests/tests/wave1d/wave1d_tree_25_5.py
 [ 55%] Generating share/nrn/lib/python/neuron/tests/test_rxd.json
 [ 55%] Generating share/nrn/lib/python/neuron/tests/test_rxd.py
 [ 55%] Generating share/nrn/lib/python/neuron/tests/test_vector.py
-[ 56%] Generating share/nrn/lib/python/neuron/tests/utils/coreneuron_available.py
-[ 56%] Generating share/nrn/lib/python/neuron/tests/utils/checkresult.py
 [ 56%] Generating share/nrn/lib/python/neuron/tests/utils/__init__.py
+[ 56%] Generating share/nrn/lib/python/neuron/tests/utils/checkresult.py
+[ 56%] Generating share/nrn/lib/python/neuron/tests/utils/coreneuron_available.py
 [ 56%] Generating share/nrn/lib/python/neuron/tests/utils/strtobool.py
-[ 56%] Generating share/nrn/lib/python/neuron/units.py
 [ 56%] Generating share/nrn/lib/python/neuron/tests/utils/capture_stdout.py
+[ 56%] Generating share/nrn/lib/python/neuron/units.py
+[ 56%] Built target modlunit
 [ 56%] Generating share/nrn/lib/python/scripts/_README.txt
 [ 56%] Generating share/nrn/lib/python/scripts/_binwrapper.py
 [ 56%] Generating share/nrn/lib/python/scripts/idraw
 [ 56%] Generating share/nrn/lib/python/scripts/mkthreadsafe
 [ 56%] Generating share/nrn/lib/python/scripts/modlunit
-[ 57%] Generating share/nrn/lib/python/scripts/nrngui
 [ 57%] Generating share/nrn/lib/python/scripts/nmodl
-[ 57%] Generating share/nrn/lib/python/scripts/nrniv
+[ 57%] Generating share/nrn/lib/python/scripts/nrngui
 [ 57%] Generating share/nrn/lib/python/scripts/neurondemo
+[ 57%] Generating share/nrn/lib/python/scripts/nrniv
 [ 57%] Generating share/nrn/lib/python/scripts/nrniv-core
 [ 57%] Generating share/nrn/lib/python/scripts/nrnivmodl
 [ 57%] Generating share/nrn/lib/python/scripts/nrnivmodl-core
 [ 57%] Generating share/nrn/lib/python/scripts/nrnpyenv.sh
-[ 57%] Generating share/nrn/lib/python/scripts/sortspike
 [ 57%] Generating share/nrn/lib/shape.cm1
+[ 57%] Generating share/nrn/lib/python/scripts/sortspike
 [ 57%] Copying /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/share/lib to /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/share/nrn/lib
 [ 57%] Built target copy_share_lib_to_build
 [ 57%] Linking CXX executable ../../bin/nocmodl
@@ -812,20 +820,21 @@ Generating link flags from name 'dl', beware that this can be fragile. Got: -ldl
 [ 57%] Generating ../nrnoc/hh.cpp
 [ 58%] Generating ../nrnoc/intfire1.cpp
 [ 58%] Generating ../nrnoc/intfire2.cpp
-[ 58%] Generating ../nrnoc/intfire4.cpp
-[ 58%] Generating ../nrnoc/netstim.cpp
 Translating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/apcount.mod into /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/apcount.cpp
-[ 58%] Generating ../nrnoc/oclmp.cpp
+[ 58%] Generating ../nrnoc/intfire4.cpp
 Thread Safe
+[ 58%] Generating ../nrnoc/netstim.cpp
+[ 58%] Generating ../nrnoc/oclmp.cpp
+Translating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/exp2syn.mod into /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/exp2syn.cpp
 [ 58%] Generating ../nrnoc/passive.cpp
+Thread Safe
 [ 58%] Generating ../nrnoc/pattern.cpp
 [ 58%] Generating ../nrnoc/ppmark.cpp
 [ 58%] Generating ../nrnoc/stim.cpp
 [ 58%] Generating ../nrnoc/svclmp.cpp
 [ 59%] Generating ../nrnoc/syn.cpp
 [ 59%] Generating ../nrnoc/vclmp.cpp
-Translating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/exp2syn.mod into /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/exp2syn.cpp
-Thread Safe
+[ 59%] Linking CXX static library ../../../../lib/libspdlog.a
 Translating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/expsyn.mod into /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/expsyn.cpp
 Thread Safe
 Translating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/feature.mod into /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/feature.cpp
@@ -839,7 +848,6 @@ Thread Safe
 Translating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/intfire4.mod into /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/intfire4.cpp
 Thread Safe
 Translating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/netstim.mod into /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/netstim.cpp
-[ 59%] Linking CXX static library ../../../../lib/libspdlog.a
 Thread Safe
 Translating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/oclmp.mod into /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/oclmp.cpp
 Thread Safe
@@ -862,70 +870,70 @@ Translating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/src/nrnoc/vclm
 Notice: VERBATIM blocks are not thread safe
 Notice: LINEAR is not thread safe.
 [ 59%] Linking CXX static library ../../../../lib/libpywrapper.a
-[ 59%] Built target pywrapper
-[ 59%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/apwindow.cpp.o
-[ 59%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/axis.cpp.o
-[ 59%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/bndedval.cpp.o
-[ 59%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/cbwidget.cpp.o
-[ 59%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/epsprint.cpp.o
-[ 59%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/fourier.cpp.o
-[ 59%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/gifimage.cpp.o
 [ 59%] Built target spdlog
-[ 59%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/graph.cpp.o
-[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/graphvec.cpp.o
-[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/grglyph.cpp.o
-[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/grmanip.cpp.o
-[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/hocmark.cpp.o
-[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/htlist.cpp.o
-[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/idraw.cpp.o
-[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ivoc.cpp.o
-[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ivocmain.cpp.o
-[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ivocrand.cpp.o
-[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ivocvect.cpp.o
-[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/matrix.cpp.o
-[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/mlinedit.cpp.o
-[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/mymath.cpp.o
-[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/objcmd.cpp.o
-[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/oc2iv.cpp.o
-[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocbox.cpp.o
-[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocbrowsr.cpp.o
-[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocdeck.cpp.o
-[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocfile.cpp.o
-[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ochelp.cpp.o
-[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/oclist.cpp.o
-[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocmatrix.cpp.o
-[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocnoiv1.cpp.o
-[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocobserv.cpp.o
-[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocpicker.cpp.o
-[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocpointer.cpp.o
-[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocptrvector.cpp.o
-[ 62%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/blame.cpp.o
-[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/octimer.cpp.o
-[ 62%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/common_utils.cpp.o
-[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/pwman.cpp.o
-[ 62%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/file_library.cpp.o
-[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/rect.cpp.o
-[ 62%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/logger.cpp.o
-[ 62%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/perf_stat.cpp.o
-[ 63%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/string_utils.cpp.o
-[ 63%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/rubband.cpp.o
-[ 63%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/scene.cpp.o
-[ 63%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/table_data.cpp.o
-[ 63%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/scenepic.cpp.o
+[ 59%] Built target pywrapper
+[ 59%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/blame.cpp.o
+[ 59%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/common_utils.cpp.o
+[ 59%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/file_library.cpp.o
+[ 59%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/logger.cpp.o
+[ 59%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/perf_stat.cpp.o
+[ 59%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/string_utils.cpp.o
+[ 59%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/apwindow.cpp.o
+[ 59%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/table_data.cpp.o
+[ 59%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/axis.cpp.o
+[ 60%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/__/config/config.cpp.o
+[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/bndedval.cpp.o
+[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/cbwidget.cpp.o
+[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/epsprint.cpp.o
+[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/fourier.cpp.o
+[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/gifimage.cpp.o
+[ 60%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/graph.cpp.o
+[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/graphvec.cpp.o
+[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/grglyph.cpp.o
+[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/grmanip.cpp.o
+[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/hocmark.cpp.o
+[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/htlist.cpp.o
+[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/idraw.cpp.o
+[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ivoc.cpp.o
+[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ivocmain.cpp.o
+[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ivocrand.cpp.o
+[ 61%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ivocvect.cpp.o
+[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/matrix.cpp.o
+[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/mlinedit.cpp.o
+[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/mymath.cpp.o
+[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/objcmd.cpp.o
+[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/oc2iv.cpp.o
+[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocbox.cpp.o
+[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocbrowsr.cpp.o
+[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocdeck.cpp.o
+[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocfile.cpp.o
+[ 62%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ochelp.cpp.o
+[ 63%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/oclist.cpp.o
+[ 63%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocmatrix.cpp.o
+[ 63%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocnoiv1.cpp.o
+[ 63%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocobserv.cpp.o
+[ 63%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocpicker.cpp.o
+[ 63%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocpointer.cpp.o
+[ 63%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/ocptrvector.cpp.o
+[ 63%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/octimer.cpp.o
+[ 63%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/pwman.cpp.o
+[ 63%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/rect.cpp.o
+[ 64%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/scene.cpp.o
+[ 64%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/rubband.cpp.o
+[ 64%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/scenepic.cpp.o
 [ 64%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/strfun.cpp.o
 [ 64%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/symchoos.cpp.o
-[ 64%] Building CXX object external/nmodl/src/utils/CMakeFiles/util.dir/__/config/config.cpp.o
 [ 64%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/utility.cpp.o
 [ 64%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/xmenu.cpp.o
-[ 64%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/field.cpp.o
 [ 64%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/xyview.cpp.o
-[ 64%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/xdep.cpp.o
-[ 65%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/coreneuron/permute/cellorder1.cpp.o
+[ 64%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/field.cpp.o
+[ 65%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/ivoc/xdep.cpp.o
 [ 65%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/coreneuron/permute/cellorder.cpp.o
 [ 65%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/coreneuron/permute/cellorder2.cpp.o
-[ 65%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/coreneuron/permute/balance.cpp.o
-[ 65%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/coreneuron/utils/lpt.cpp.o
+[ 65%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/coreneuron/permute/cellorder1.cpp.o
 [ 65%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/coreneuron/permute/node_permute.cpp.o
+[ 65%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/coreneuron/utils/lpt.cpp.o
+[ 65%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/coreneuron/permute/balance.cpp.o
 [ 65%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrncvode/cvodeobj.cpp.o
 [ 65%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrncvode/cvodestb.cpp.o
 [ 65%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrncvode/cvtrset.cpp.o
@@ -941,34 +949,34 @@ Notice: LINEAR is not thread safe.
 [ 66%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/finithnd.cpp.o
 [ 66%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/glinerec.cpp.o
 [ 67%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/impedanc.cpp.o
-[ 67%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/hocmech.cpp.o
 [ 67%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/kschan.cpp.o
+[ 67%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/hocmech.cpp.o
 [ 67%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/kssingle.cpp.o
 [ 67%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/linmod.cpp.o
-[ 67%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/matrixmap.cpp.o
 [ 67%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/linmod1.cpp.o
-[ 67%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/multisplit.cpp.o
+[ 67%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/matrixmap.cpp.o
 [ 67%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/memory_usage.cpp.o
+[ 67%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/multisplit.cpp.o
 [ 68%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/netpar.cpp.o
+[ 68%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/ndatclas.cpp.o
 [ 68%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nmodlrandom.cpp.o
 [ 68%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nonlinz.cpp.o
 [ 68%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/neuronapi.cpp.o
-[ 68%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/ndatclas.cpp.o
 [ 68%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nrncore_write.cpp.o
 [ 68%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nrncore_write/callbacks/nrncore_callbacks.cpp.o
 [ 68%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nrncore_write/data/cell_group.cpp.o
 [ 68%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nrncore_write/data/datum_indices.cpp.o
 [ 68%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nrncore_write/io/nrncore_io.cpp.o
 [ 69%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nrndae.cpp.o
-[ 69%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nrnmenu.cpp.o
 [ 69%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nrncore_write/utils/nrncore_utils.cpp.o
+[ 69%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nrnmenu.cpp.o
 [ 69%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nrnpy.cpp.o
 [ 69%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nrnste.cpp.o
 [ 69%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nvector_nrnserial_ld.cpp.o
 [ 69%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nvector_nrnthread.cpp.o
 [ 69%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nvector_nrnthread_ld.cpp.o
-[ 69%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/partrans.cpp.o
 [ 69%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/ocjump.cpp.o
+[ 69%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/partrans.cpp.o
 [ 70%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/prcellstate.cpp.o
 [ 70%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/ppshape.cpp.o
 [ 70%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/pysecname2sec.cpp.o
@@ -980,8 +988,8 @@ Notice: LINEAR is not thread safe.
 [ 70%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/spaceplt.cpp.o
 [ 70%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/splitcell.cpp.o
 [ 71%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/vrecord.cpp.o
-[ 71%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/cabcode.cpp.o
 [ 71%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/symdir.cpp.o
+[ 71%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/cabcode.cpp.o
 [ 71%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/capac.cpp.o
 [ 71%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/clamp.cpp.o
 [ 71%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/container.cpp.o
@@ -990,9 +998,9 @@ Notice: LINEAR is not thread safe.
 [ 71%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/fadvance.cpp.o
 [ 71%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/fstim.cpp.o
 [ 72%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/init.cpp.o
+[ 72%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/ldifus.cpp.o
 [ 72%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/hocprax.cpp.o
 [ 72%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/membfunc.cpp.o
-[ 72%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/ldifus.cpp.o
 [ 72%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/memblist.cpp.o
 [ 72%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/nrntimeout.cpp.o
 [ 72%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/nrnversion.cpp.o
@@ -1001,8 +1009,8 @@ Notice: LINEAR is not thread safe.
 [ 72%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/psection.cpp.o
 [ 73%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/secref.cpp.o
 [ 73%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/synapse.cpp.o
-[ 73%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/solve.cpp.o
 [ 73%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/seclist.cpp.o
+[ 73%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/solve.cpp.o
 [ 73%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/treeset.cpp.o
 [ 73%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/multicore.cpp.o
 [ 73%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/audit.cpp.o
@@ -1010,19 +1018,19 @@ Notice: LINEAR is not thread safe.
 [ 73%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/code.cpp.o
 [ 73%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/code2.cpp.o
 [ 74%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/fileio.cpp.o
-[ 74%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/ftime.cpp.o
 [ 74%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/debug.cpp.o
 [ 74%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/functabl.cpp.o
+[ 74%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/ftime.cpp.o
 [ 74%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/getsym.cpp.o
 [ 74%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/hoc.cpp.o
 [ 74%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/hocusr.cpp.o
 [ 74%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/hoc_init.cpp.o
 [ 74%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/hoc_oop.cpp.o
 [ 74%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/list.cpp.o
-[ 75%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/oc_mcran4.cpp.o
-[ 75%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/math.cpp.o
-[ 75%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/mswinprt.cpp.o
 [ 75%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/memory.cpp.o
+[ 75%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/oc_mcran4.cpp.o
+[ 75%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/mswinprt.cpp.o
+[ 75%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/math.cpp.o
 [ 75%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/nonlin.cpp.o
 [ 75%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/plot.cpp.o
 [ 75%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/oc/plt.cpp.o
@@ -1040,8 +1048,8 @@ Notice: LINEAR is not thread safe.
 [ 76%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/intfire2.cpp.o
 [ 76%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/intfire4.cpp.o
 [ 77%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/oclmp.cpp.o
-[ 77%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/passive.cpp.o
 [ 77%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/netstim.cpp.o
+[ 77%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/passive.cpp.o
 [ 77%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/pattern.cpp.o
 [ 77%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/ppmark.cpp.o
 [ 77%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/stim.cpp.o
@@ -1049,8 +1057,8 @@ Notice: LINEAR is not thread safe.
 [ 77%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/syn.cpp.o
 [ 77%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnoc/vclmp.cpp.o
 [ 77%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/abort.cpp.o
-[ 78%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/boundary.cpp.o
 [ 78%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/crank.cpp.o
+[ 78%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/boundary.cpp.o
 [ 78%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/advance.cpp.o
 [ 78%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/scoperf.cpp.o
 [ 78%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/expfit.cpp.o
@@ -1060,9 +1068,9 @@ Notice: LINEAR is not thread safe.
 [ 78%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/force.cpp.o
 [ 78%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/gauss.cpp.o
 [ 79%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/harmonic.cpp.o
-[ 79%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/getmem.cpp.o
 [ 79%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/hyperbol.cpp.o
 [ 79%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/invert.cpp.o
+[ 79%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/getmem.cpp.o
 [ 79%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/lag.cpp.o
 [ 79%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/legendre.cpp.o
 [ 79%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/normrand.cpp.o
@@ -1072,22 +1080,22 @@ Notice: LINEAR is not thread safe.
 [ 80%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/praxis.cpp.o
 [ 80%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/pulse.cpp.o
 [ 80%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/poisson.cpp.o
-[ 80%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/revsawto.cpp.o
-[ 80%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/revhyper.cpp.o
 [ 80%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/ramp.cpp.o
+[ 80%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/revhyper.cpp.o
+[ 80%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/revsawto.cpp.o
 [ 80%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/revsigmo.cpp.o
 [ 80%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/romberg.cpp.o
 [ 80%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/sawtooth.cpp.o
 [ 80%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/sigmoid.cpp.o
 [ 81%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/squarewa.cpp.o
-[ 81%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/threshol.cpp.o
+[ 81%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/spline.cpp.o
 [ 81%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/step.cpp.o
+[ 81%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/threshol.cpp.o
 [ 81%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/tridiag.cpp.o
 [ 81%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sparse/bksub.cpp.o
-[ 81%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sparse/lineq.cpp.o
 [ 81%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sparse/getelm.cpp.o
+[ 81%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sparse/lineq.cpp.o
 [ 81%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sparse/prmat.cpp.o
-[ 81%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/scopmath/spline.cpp.o
 [ 82%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sparse/subrows.cpp.o
 [ 82%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/cvodes/cvband.c.o
 [ 82%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/cvodes/cvbandpre.c.o
@@ -1098,30 +1106,30 @@ Notice: LINEAR is not thread safe.
 [ 82%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/cvodes/cvodes.c.o
 [ 82%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/cvodes/cvodesio.c.o
 [ 82%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/cvodes/cvspgmr.c.o
-[ 83%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/ida/idabbdpre.c.o
 [ 83%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/ida/ida.c.o
-[ 83%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/ida/idaband.c.o
+[ 83%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/ida/idabbdpre.c.o
 [ 83%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/ida/idadense.c.o
-[ 83%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/ida/idaio.c.o
 [ 83%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/ida/idaic.c.o
 [ 83%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/ida/idaspgmr.c.o
+[ 83%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/ida/idaio.c.o
 [ 83%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/shared/band.c.o
 [ 83%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/shared/dense.c.o
+[ 83%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/ida/idaband.c.o
 [ 83%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/shared/iterative.c.o
 [ 84%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/shared/nvector_serial.c.o
-[ 84%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/shared/nvector.c.o
-[ 84%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/shared/smalldense.c.o
 [ 84%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/shared/spgmr.c.o
+[ 84%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/shared/smalldense.c.o
+[ 84%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/shared/nvector.c.o
 [ 84%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/shared/sundialsmath.c.o
 [ 84%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/parallel/bbs.cpp.o
 [ 84%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/parallel/bbsclimpi.cpp.o
 [ 84%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/parallel/bbsdirectmpi.cpp.o
 [ 84%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/parallel/bbslocal.cpp.o
 [ 84%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/parallel/bbslsrv.cpp.o
-[ 85%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/parallel/bbssrvmpi.cpp.o
-[ 85%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/parallel/ocbbs.cpp.o
-[ 85%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/parallel/bbssrv2mpi.cpp.o
 [ 85%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/nvector_nrnparallel_ld.cpp.o
+[ 85%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/parallel/ocbbs.cpp.o
+[ 85%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/parallel/bbssrvmpi.cpp.o
+[ 85%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/parallel/bbssrv2mpi.cpp.o
 [ 85%] Building C object src/nrniv/CMakeFiles/nrniv_lib.dir/__/sundials/shared/nvector_parallel.c.o
 [ 85%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnmpi/nrnmpi.cpp.o
 [ 85%] Building CXX object src/nrniv/CMakeFiles/nrniv_lib.dir/__/nrnmpi/memory_usage.cpp.o
@@ -1135,34 +1143,34 @@ Notice: LINEAR is not thread safe.
 [ 86%] -- NMODL : GENERATING C(11) LEXER WITH FLEX! --
 [ 86%] -- NMODL : GENERATING DIFFERENTIAL EQUATION LEXER WITH FLEX! --
 ../../../../../external/nmodl/src/lexer/diffeq.ll:100: warning, -s option given but default rule can be matched
-[ 87%] -- NMODL : GENERATING UNIT LEXER WITH FLEX! --
 [ 87%] Building CXX object external/nmodl/src/pybind/CMakeFiles/pyembed.dir/pyembed.cpp.o
 [ 87%] Building CXX object external/nmodl/src/printer/CMakeFiles/printer.dir/code_printer.cpp.o
+[ 87%] -- NMODL : GENERATING UNIT LEXER WITH FLEX! --
 [ 87%] -- NMODL : GENERATING NMODL LEXER WITH FLEX! --
 [ 87%] Building CXX object external/nmodl/src/printer/CMakeFiles/printer.dir/json_printer.cpp.o
 [ 87%] Building CXX object external/nmodl/src/printer/CMakeFiles/printer.dir/nmodl_printer.cpp.o
 [ 87%] -- NMODL : GENERATING VERBATIM LEXER WITH FLEX! --
-../../../../../external/nmodl/src/lexer/nmodl.ll:503: warning, -s option given but default rule can be matched
 [ 87%] -- NMODL : GENERATING C (11) PARSER WITH BISON! --
+../../../../../external/nmodl/src/lexer/nmodl.ll:503: warning, -s option given but default rule can be matched
 ../../../../../external/nmodl/src/lexer/unit.ll:171: warning, -s option given but default rule can be matched
 [ 87%] -- NMODL : GENERATING DIFFERENTIAL EQUATION PARSER WITH BISON! --
-../../../../../external/nmodl/src/parser/diffeq.yy: warning: 2 shift/reduce conflicts [-Wconflicts-sr]
 [ 87%] -- NMODL : GENERATING NMODL_CORE PARSER WITH BISON! --
+../../../../../external/nmodl/src/parser/diffeq.yy: warning: 2 shift/reduce conflicts [-Wconflicts-sr]
 [ 87%] -- NMODL : GENERATING UNIT PARSER WITH BISON! --
 ../../../../../external/nmodl/src/parser/nmodl.yy: warning: 3 shift/reduce conflicts [-Wconflicts-sr]
 [ 88%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/nmodl_utils.cpp.o
-[ 88%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/modtoken.cpp.o
 [ 88%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/token_mapping.cpp.o
+[ 88%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/modtoken.cpp.o
 [ 88%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/nmodl_base_lexer.cpp.o
 [ 88%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/verbatim_lexer.cpp.o
 [ 88%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/diffeq_base_lexer.cpp.o
 [ 88%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/c11_base_lexer.cpp.o
 [ 88%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/unit_base_lexer.cpp.o
 [ 88%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/__/parser/nmodl_driver.cpp.o
+[ 88%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/__/parser/diffeq_driver.cpp.o
 [ 89%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/__/parser/c11_driver.cpp.o
-[ 89%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/__/parser/diffeq_driver.cpp.o
-[ 89%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/__/parser/unit_driver.cpp.o
 [ 89%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/__/parser/diffeq_context.cpp.o
+[ 89%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/__/parser/unit_driver.cpp.o
 [ 89%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/__/parser/nmodl/nmodl_parser.cpp.o
 [ 89%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/__/parser/verbatim_parser.cpp.o
 [ 89%] Building CXX object external/nmodl/src/lexer/CMakeFiles/lexer.dir/__/parser/diffeq/diffeq_parser.cpp.o
@@ -1217,8 +1225,8 @@ Notice: LINEAR is not thread safe.
 [ 95%] Building CXX object external/nmodl/src/visitors/CMakeFiles/visitor.dir/symtab_visitor.cpp.o
 [ 95%] Linking CXX static library ../../../../lib/libsymtab.a
 [ 95%] Built target symtab
-[ 95%] Linking CXX shared library ../../lib/libnrniv.so
 [ 96%] Linking CXX static library ../../../../lib/libvisitor.a
+[ 96%] Linking CXX shared library ../../lib/libnrniv.so
 [ 96%] Built target visitor
 [ 96%] Building CXX object external/nmodl/src/codegen/CMakeFiles/codegen.dir/codegen_acc_visitor.cpp.o
 [ 96%] Building CXX object external/nmodl/src/codegen/CMakeFiles/codegen.dir/codegen_transform_visitor.cpp.o
@@ -1238,103 +1246,181 @@ Building python module with: /vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8
       --cmake-build-dir;/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build;--disable-rx3d;--without-nrnpython;--build-lib=/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python build_ext;--define=USE_PYTHON,NRN_ENABLE_THREADS,CORENRN_BUILD=0
 [ 97%] Linking CXX executable ../../bin/nrniv
 INFO:root:setup.py called with:setup.py build --cmake-build-dir /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build --disable-rx3d --without-nrnpython --build-lib=/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python build_ext --define=USE_PYTHON,NRN_ENABLE_THREADS,CORENRN_BUILD=0
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `tparm@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_safe_strcpy@NCURSES6_TINFO_5.2.20001021'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `wtimeout@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_doalloc@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_safe_strcat@NCURSES6_TINFO_5.2.20001021'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `baudrate_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_update_screensize@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `new_prescr@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_str_init@NCURSES6_TINFO_5.2.20001021'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `del_curterm_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `LINES@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_access@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `cbreak_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `COLS@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `raw_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `reset_prog_mode_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_init_acs_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_putchar_sp@NCURSES6_TINFO_5.9.20150530'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_keypad@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `newscr@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_str_null@NCURSES6_TINFO_5.2.20001021'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_tiparm@NCURSES6_TINFO_6.2.20211010'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_str_copy@NCURSES6_TINFO_5.2.20001021'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `curses_version@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_outc_wrapper@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_flush_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `tigetstr@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `TABSIZE@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_err_abort@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `SP@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_get_tty_mode_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `nocbreak_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_timed_wait@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `tigetnum@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `curs_set_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `stdscr@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `erasechar_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_get_screensize@NCURSES6_TINFO_5.7.20081102'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_setupterm@NCURSES6_TINFO_5.5.20051010'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `killchar_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `has_ic_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `curscr@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `tputs_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_screen_chain@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_set_no_padding@NCURSES6_TINFO_5.7.20081102'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `flushinp_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_unicode_locale@NCURSES6_TINFO_5.4.20040208'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `cur_term@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_putp_flush_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `typeahead_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_outch_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_globals@NCURSES6_TINFO_5.7.20081102'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_get_locale@NCURSES6_TINFO_5.4.20040208'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `def_prog_mode_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_prescreen@NCURSES6_TINFO_5.7.20081102'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_handle_sigwinch@NCURSES6_TINFO_5.6.20061217'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `def_shell_mode_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_add_to_try@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `unctrl_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `keyok_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_getenv_num@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_screen_of@NCURSES6_TINFO_5.7.20081102'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `acs_map@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_set_tty_mode_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `noraw_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `reset_shell_mode_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_locale_breaks_acs@NCURSES6_TINFO_5.4.20040208'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `set_curterm@NCURSES6_TINFO_5.0.19991023'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_flush@NCURSES6_TINFO_5.1.20000708'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `_nc_putp_sp@NCURSES6_TINFO_5.8.20110226'
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/ncurses-6.3-bkiy5rydx5sunb6sevrdpifr3mzaavan/lib/libcurses.so: undefined reference to `tigetflag@NCURSES6_TINFO_5.0.19991023'
 INFO:root:Extension common compile flags defaultdict(<class 'list'>, {'library_dirs': ['/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib'], 'libraries': ['nrniv']})
 INFO:root:RX3D is DISABLED
-[ 97%] Built target nrniv
-/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/py-setuptools-68.0.0-kndrnlzgks5i6xy3mrylvtoz5xpomkbp/lib/python3.10/site-packages/setuptools/__init__.py:84: _DeprecatedInstaller: setuptools.installer and fetch_build_eggs are deprecated.
-!!
+collect2: error: ld returned 1 exit status
+make[2]: *** [src/nrniv/CMakeFiles/nrniv.dir/build.make:139: bin/nrniv] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2595: src/nrniv/CMakeFiles/nrniv.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/py-setuptools-59.4.0-rn35dtkkfe3m73ym73szkfoka563ojlq/lib/python3.10/site-packages/setuptools/installer.py:27: SetuptoolsDeprecationWarning: setuptools.installer is deprecated. Requirements should be satisfied by a PEP 517 installer.
+  warnings.warn(
+WARNING: The wheel package is not available.
+WARNING: The wheel package is not available.
+/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/.eggs/setuptools_scm-8.1.0-py3.11.egg/setuptools_scm/_integration/setuptools.py:31: RuntimeWarning: 
+ERROR: setuptools==59.4.0 is used in combination with setuptools_scm>=8.x
 
-        ********************************************************************************
-        Requirements should be satisfied by a PEP 517 installer.
-        If you are using pip, you can try `pip install --use-pep517`.
-        ********************************************************************************
+Your build configuration is incomplete and previously worked by accident!
+setuptools_scm requires setuptools>=61
 
-!!
-  dist.fetch_build_eggs(dist.setup_requires)
-WARNING:root:WARNING: The wheel package is not available.
+Suggested workaround if applicable:
+ - migrating from the deprecated setup_requires mechanism to pep517/518
+   and using a pyproject.toml to declare build dependencies
+   which are reliably pre-installed before running the build tools
+
+  warnings.warn(
 WARNING setuptools_scm.pyproject_reading toml section missing 'pyproject.toml does not contain a tool.setuptools_scm section'
 Traceback (most recent call last):
   File "/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/.eggs/setuptools_scm-8.1.0-py3.11.egg/setuptools_scm/_integration/pyproject_reading.py", line 36, in read_pyproject
     section = defn.get("tool", {})[tool_name]
               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
 KeyError: 'setuptools_scm'
-INFO:root:running build
-INFO:root:running build_py
-INFO:root:copying share/lib/python/neuron/nonvint_block_supervisor.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
-INFO:root:copying share/lib/python/neuron/units.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
-INFO:root:copying share/lib/python/neuron/psection.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
-INFO:root:copying share/lib/python/neuron/hclass3.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
-INFO:root:copying share/lib/python/neuron/config.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
-INFO:root:copying share/lib/python/neuron/gui.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
-INFO:root:copying share/lib/python/neuron/doc.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
-INFO:root:copying share/lib/python/neuron/coreneuron.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
-INFO:root:copying share/lib/python/neuron/expect_hocerr.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
-INFO:root:copying share/lib/python/neuron/sections.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
-INFO:root:copying share/lib/python/neuron/__init__.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
-INFO:root:creating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
-INFO:root:copying share/lib/python/neuron/neuroml/metadata.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
-INFO:root:copying share/lib/python/neuron/neuroml/rdxml.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
-INFO:root:copying share/lib/python/neuron/neuroml/neuroml.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
-INFO:root:copying share/lib/python/neuron/neuroml/xml2nrn.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
-INFO:root:copying share/lib/python/neuron/neuroml/morphml.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
-INFO:root:copying share/lib/python/neuron/neuroml/__init__.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
-INFO:root:copying share/lib/python/neuron/neuroml/biophysics.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
-INFO:root:creating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
-INFO:root:copying share/lib/python/neuron/tests/test_vector.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
-INFO:root:copying share/lib/python/neuron/tests/test_all.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
-INFO:root:copying share/lib/python/neuron/tests/test_rxd.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
-INFO:root:copying share/lib/python/neuron/tests/_subclass.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
-INFO:root:copying share/lib/python/neuron/tests/test_neuron.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
-INFO:root:copying share/lib/python/neuron/tests/__init__.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
-INFO:root:creating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests/utils
-INFO:root:copying share/lib/python/neuron/tests/utils/capture_stdout.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests/utils
-INFO:root:copying share/lib/python/neuron/tests/utils/checkresult.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests/utils
-INFO:root:copying share/lib/python/neuron/tests/utils/strtobool.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests/utils
-INFO:root:copying share/lib/python/neuron/tests/utils/coreneuron_available.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests/utils
-INFO:root:copying share/lib/python/neuron/tests/utils/__init__.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests/utils
-INFO:root:creating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/constants.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/dimension3.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/options.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/rxdmath.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/export.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/rxd.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/rate.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/reaction.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/initializer.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/rxdsection.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/generalizedReaction.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/node.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/nodelist.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/plugins.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/region.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/rangevar.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/gui.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/section1d.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/geometry.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/species.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/multiCompartmentReaction.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/rxdException.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:copying share/lib/python/neuron/rxd/__init__.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
-INFO:root:creating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/crxd
-INFO:root:copying share/lib/python/neuron/crxd/__init__.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/crxd
-INFO:root:creating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/gui2
-INFO:root:copying share/lib/python/neuron/gui2/utilities.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/gui2
-INFO:root:copying share/lib/python/neuron/gui2/setup_threejs.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/gui2
-INFO:root:copying share/lib/python/neuron/gui2/config.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/gui2
-INFO:root:copying share/lib/python/neuron/gui2/rangevar.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/gui2
-INFO:root:copying share/lib/python/neuron/gui2/plotshape.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/gui2
-INFO:root:copying share/lib/python/neuron/gui2/__init__.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/gui2
-INFO:root:copying share/lib/python/neuron/tests/test_rxd.json -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
-INFO:root:running build_ext
+running build
+running build_py
+copying share/lib/python/neuron/nonvint_block_supervisor.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
+copying share/lib/python/neuron/units.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
+copying share/lib/python/neuron/psection.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
+copying share/lib/python/neuron/hclass3.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
+copying share/lib/python/neuron/config.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
+copying share/lib/python/neuron/gui.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
+copying share/lib/python/neuron/doc.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
+copying share/lib/python/neuron/coreneuron.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
+copying share/lib/python/neuron/expect_hocerr.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
+copying share/lib/python/neuron/sections.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
+copying share/lib/python/neuron/__init__.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron
+creating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
+copying share/lib/python/neuron/neuroml/metadata.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
+copying share/lib/python/neuron/neuroml/rdxml.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
+copying share/lib/python/neuron/neuroml/neuroml.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
+copying share/lib/python/neuron/neuroml/xml2nrn.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
+copying share/lib/python/neuron/neuroml/morphml.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
+copying share/lib/python/neuron/neuroml/__init__.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
+copying share/lib/python/neuron/neuroml/biophysics.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/neuroml
+creating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
+copying share/lib/python/neuron/tests/test_vector.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
+copying share/lib/python/neuron/tests/test_all.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
+copying share/lib/python/neuron/tests/test_rxd.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
+copying share/lib/python/neuron/tests/_subclass.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
+copying share/lib/python/neuron/tests/test_neuron.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
+copying share/lib/python/neuron/tests/__init__.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
+creating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests/utils
+copying share/lib/python/neuron/tests/utils/capture_stdout.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests/utils
+copying share/lib/python/neuron/tests/utils/checkresult.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests/utils
+copying share/lib/python/neuron/tests/utils/strtobool.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests/utils
+copying share/lib/python/neuron/tests/utils/coreneuron_available.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests/utils
+copying share/lib/python/neuron/tests/utils/__init__.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests/utils
+creating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/constants.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/dimension3.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/options.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/rxdmath.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/export.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/rxd.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/rate.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/reaction.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/initializer.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/rxdsection.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/generalizedReaction.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/node.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/nodelist.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/plugins.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/region.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/rangevar.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/gui.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/section1d.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/geometry.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/species.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/multiCompartmentReaction.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/rxdException.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+copying share/lib/python/neuron/rxd/__init__.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/rxd
+creating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/crxd
+copying share/lib/python/neuron/crxd/__init__.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/crxd
+creating /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/gui2
+copying share/lib/python/neuron/gui2/utilities.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/gui2
+copying share/lib/python/neuron/gui2/setup_threejs.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/gui2
+copying share/lib/python/neuron/gui2/config.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/gui2
+copying share/lib/python/neuron/gui2/rangevar.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/gui2
+copying share/lib/python/neuron/gui2/plotshape.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/gui2
+copying share/lib/python/neuron/gui2/__init__.py -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/gui2
+copying share/lib/python/neuron/tests/test_rxd.json -> /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/lib/python/neuron/tests
+running build_ext
 INFO:root:==> Building Python extensions
-INFO:root:building 'neuron.hoc' extension
-INFO:root:/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/gcc-8.5.0/gcc-12.2.0-nencizhor4qmsg6k5ad5gpk5cwqj7a37/bin/gcc -DNDEBUG -g -fwrapv -O3 -Wall -KPIC -fPIC -DUSE_PYTHON=1 -DNRN_ENABLE_THREADS=1 -DCORENRN_BUILD=0=1 -Isrc -Isrc/oc -Isrc/nrnpython -Isrc/nrnmpi -I/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/src -I/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/src/oc -I/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/src/nrnpython -I/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/src/nrnmpi -I/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/python-3.11.6-qbmpmn2uxu4oe3qoawxbizp7awqlgkcq/include/python3.11 -c src/nrnpython/inithoc.cpp -o /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/src/nrnpython/inithoc.o -std=c++17
-gcc: error: unrecognized command-line option '-KPIC'; did you mean '-fPIC'?
-error: command '/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/gcc-8.5.0/gcc-12.2.0-nencizhor4qmsg6k5ad5gpk5cwqj7a37/bin/gcc' failed with exit code 1
+building 'neuron.hoc' extension
+/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/gcc-8.5.0/gcc-12.2.0-nencizhor4qmsg6k5ad5gpk5cwqj7a37/bin/g++ -DNDEBUG -g -fwrapv -O3 -Wall -KPIC -fPIC -DUSE_PYTHON=1 -DNRN_ENABLE_THREADS=1 -DCORENRN_BUILD=0=1 -Isrc -Isrc/oc -Isrc/nrnpython -Isrc/nrnmpi -I/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/src -I/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/src/oc -I/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/src/nrnpython -I/vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/src/nrnmpi -I/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/fj-4.10.0/python-3.11.6-qbmpmn2uxu4oe3qoawxbizp7awqlgkcq/include/python3.11 -c src/nrnpython/inithoc.cpp -o /vol0004/hp200139/data/u12103/NEURON_build_source/nrn/build/src/nrnpython/inithoc.o -std=c++17
+g++: error: unrecognized command-line option '-KPIC'; did you mean '-fPIC'?
+error: command '/vol0004/apps/oss/spack-v0.21/opt/spack/linux-rhel8-a64fx/gcc-8.5.0/gcc-12.2.0-nencizhor4qmsg6k5ad5gpk5cwqj7a37/bin/g++' failed with exit code 1
 make[2]: *** [src/nrnpython/CMakeFiles/hoc_module.dir/build.make:83: hoc_module] Error 1
 make[1]: *** [CMakeFiles/Makefile2:2316: src/nrnpython/CMakeFiles/hoc_module.dir/all] Error 2
-make[1]: *** Waiting for unfinished jobs....
 [ 97%] Linking CXX static library ../../../../lib/libcodegen.a
 [ 97%] Built target codegen
 make: *** [Makefile:136: all] Error 2
