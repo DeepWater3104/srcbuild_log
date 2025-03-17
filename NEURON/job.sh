@@ -11,9 +11,9 @@
 
 #module load Python3-CN
 
-#. ../../spack/share/spack/setup-env.sh
+. ../../spack/share/spack/setup-env.sh
 . /vol0004/apps/oss/spack/share/spack/setup-env.sh
-spack load /nencizh # gcc@12.2.0
+#spack load /nencizh # gcc@12.2.0
 spack load fujitsu-mpi%gcc@12.2.0
 spack load /fhakchp # python@3.8.12%fj@4.7.0
 spack load /dgmiy5n # py-numpy@1.25.2%fj@4.10.0
@@ -28,7 +28,7 @@ spack find --loaded # see the list of loaded modules
 
 pip list
 
-which mpicc mpicxx
+which mpifcc mpiFCC
 
 cmake .. \
   -DNRN_ENABLE_CORENEURON=ON \
@@ -36,6 +36,8 @@ cmake .. \
   -DNRN_ENABLE_INTERVIEWS=OFF \
   -DNRN_ENABLE_RX3D=OFF \
   -DCMAKE_INSTALL_PREFIX=../../install \
+  -DCMAKE_C_COMPILER=mpicc \
+  -DCMAKE_CXX_COMPILER=mpicxx \
   -DMPI_C_COMPILER=mpicc \
   -DMPI_CXX_COMPILER=mpicxx
 
